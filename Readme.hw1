@@ -1,0 +1,19 @@
+This project is an Online Resume.
+
+resume.html is the main file. It includes a MP4 file of a video indroduction, a JPEG headshot.
+It also has a button linking to Transrcipt.html and a dropdown menu of Internships linking to prj1.html and prj2.html.
+
+transcript.html is password protected. Once the correct password is entered ('frankbutt'), the trascipt displays
+below it using the html table format.
+
+prj1.html includes a description of the first internship and displays dell_1.jpg.
+
+prj2.html includes a description of the second internship and displays amd_1.jpeg, amd_2.jpg.
+
+All the .html files include a Home button in the top right that links to resume.html and LinkedIn/Github icons 
+at the bottom.
+
+styles.css includes all css styles used in this project.
+
+script.js includes the javascript functionalites for the accordian style dropdown menu in resume.html, for setting 
+heights of the supporting image in prj1.html and prj2.html, and for checking password protection in transcript.html.

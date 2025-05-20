@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d0f19;
+    color: white;
+    padding: 15px 50px;
+    border-bottom: 5px solid #29e1db;
+}
+
+.header-left h1 {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.header-right {
+    padding-right: 20px;
+}
+
+.header-right button {
+    padding: 5px 10px;
+    background-color: #29e1db;
+    border: none;
+    color: #0d0f19;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-right button:hover {
+    background-color: #4fece7;
+}
+
+.media-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 55px;
+    background-color: #fff;
+}
+
+
+.image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    height: 55vh; 
+    width: auto; 
+    border-radius: 20px;
+    box-shadow: 1px 5px 10px #29e1db;
+}
+
+.accordion-container {
+    width: 60%;
+}
+
+.accordion {
+    background-color: #0d0f19;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: #14efe7c3 solid 2px;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.accordion:hover {
+    background-color: #0d0f19cd;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid #0d0f19;
+    border-left: 2px solid #0d0f19;
+    border-right: 2px solid #0d0f19;
+}
+
+.video {
+    display: block;
+    margin: 0 auto; 
+    max-width: 50%; 
+}
+
+.links-section {
+    display: block; 
+    text-align: center; 
+    margin: 20px;
+}
+
+.transcript-button {
+    background-color: #0d0f19;
+    color: #29e1db;
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 22px;
+    border: 2px solid #29e1db;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.transcript-button:hover {
+    background-color: #29e1db;
+    color: #0d0f19;
+}
+
+.dropdown {
+    display: inline-block; 
+    position: relative; 
+}
+
+.dropbtn {
+    background-color: #0d0f19;
+    color: #29e1db;
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 22px;
+    border: 2px solid #29e1db;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    background-color: #0d0f19;
+    min-width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.dropdown-content a {
+    color: #29e1db;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #29e1db;
+    color: #0d0f19;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: #333;
+    margin: 0 15px;
+}
+
+.social-icon:hover {
+    color: #0d0f19; 
+}
+
+.transcript-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.transcript-table th,
+.transcript-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.transcript-table th {
+    background-color: #0d0f19;
+    color: white;
+    font-weight: bold;
+}
+
+.transcript-table tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.transcript-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.transcript-table tbody td[colspan="5"] {
+    background-color: #29e1db;
+    color: #0d0f19;
+    text-align: center;
+    font-weight: bold;
+}
+
+.transcript-info {
+    text-align: left;
+    background-color: #f4f4f4;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.transcript-info p {
+    margin: 5px;
+    color: #0d0f19;
+}
+
+.transcript-info strong {
+    color: #0d0f19;
+}
+
+.password-section {
+    padding-left: 20px;
+}
+
+.intership-section {
+    background-color: white;
+    padding: 20px 50px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.internship-image {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-left: 50px; 
+}
+
+.internship-image img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.internship-list li {
+    margin-bottom: 15px; 
+}

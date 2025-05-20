@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <h1>Harini's Transcript</h1>
+        </div>
+        <div class="header-right">
+            <a href="resume.html">
+                <button id="homeButton">Home</button>
+            </a>            
+        </div>
+    </header>
+
+    <section class="password-section">
+        <p><strong>Enter password to view transcript:</strong></p>
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+        <p id="errorMessage" style="color: red; display: none;">Incorrect password. Please try again.</p>
+    </section>
+
+    <section class="transcript-section" id="transcriptSection" style="display: none;">
+
+        <section class="transcript-info">
+            <p><strong>MAJOR:</strong> BS Computer Engineering | <strong>SJSU CUM GPA:</strong> 3.848 | <strong>EXPECTED:</strong> Dec 2025</p>
+        </section>
+
+        <table class="transcript-table">
+            <thead>
+                <tr>
+                    <th>Semester</th>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Units</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td rowspan="7">Fall 2022</td><td>ASIA 19</td><td>Music in World Cultures</td><td>3.0</td><td>A+</td></tr>
+                <tr><td>CMPE 50</td><td>Object-Oriented Concepts and Methodology</td><td>3.0</td><td>A+</td></tr>
+                <tr><td>COMM 20</td><td>Public Speaking</td><td>3.0</td><td>A</td></tr>
+                <tr><td>COMM 191B</td><td>Platform Speaking</td><td>1.0</td><td>CR</td></tr>
+                <tr><td>MATH 32W</td><td>Calculus III Workshop</td><td>1.0</td><td>CR</td></tr>
+                <tr><td>MATH 32X</td><td>Calculus III</td><td>3.0</td><td>A</td></tr>
+                <tr><td>POLS 15</td><td>US & CA Government</td><td>3.0</td><td>A+</td></tr>
+                <tr><td colspan="5">Semester Total: 17.0 Units | GPA: 4.000 | President's Scholar</td></tr>
+    
+                <tr><td rowspan="6">Spring 2023</td><td>CMPE 102</td><td>Assembly Language Programming</td><td>3.0</td><td>A+</td></tr>
+                <tr><td>EE 97</td><td>Introductory EE Laboratory</td><td>1.0</td><td>B</td></tr>
+                <tr><td>EE 98</td><td>Introduction to Circuit Analysis</td><td>3.0</td><td>A-</td></tr>
+                <tr><td>ENGL 1B</td><td>Argument and Analysis</td><td>3.0</td><td>A+</td></tr>
+                <tr><td>ENGR 10</td><td>Introduction to Engineering</td><td>3.0</td><td>A+</td></tr>
+                <tr><td>MATH 161A</td><td>Applied Probability & Statistics I</td><td>3.0</td><td>A</td></tr>
+                <tr><td colspan="5">Semester Total: 16.0 Units | GPA: 3.881 | Dean's Scholar</td></tr>
+    
+                <tr><td rowspan="4">Fall 2023</td><td>CMPE 110</td><td>Electronics for Computing Systems</td><td>3.0</td><td>A</td></tr>
+                <tr><td>CMPE 124</td><td>Digital Design I</td><td>3.0</td><td>B</td></tr>
+                <tr><td>CMPE 126</td><td>Algorithms & Data Structure Design</td><td>3.0</td><td>A+</td></tr>
+                <tr><td>ENGR 100W</td><td>Engineering Reports</td><td>3.0</td><td>A</td></tr>
+                <tr><td colspan="5">Semester Total: 12.0 Units | GPA: 3.750 | Dean's Scholar</td></tr>
+    
+                <tr><td>Spring 2024</td><td colspan="4">Break Semester</td></tr>
+    
+                <tr><td rowspan="5">Fall 2024</td><td>CMPE 125</td><td>Digital Design II</td><td>3.0</td><td>In Progress</td></tr>
+                <tr><td>CMPE 127</td><td>Microprocessor Design I</td><td>3.0</td><td>In Progress</td></tr>
+                <tr><td>CMPE 130</td><td>Advanced Algorithm Design</td><td>3.0</td><td>In Progress</td></tr>
+                <tr><td>CMPE 131</td><td>Software Engineering I</td><td>3.0</td><td>In Progress</td></tr>
+                <tr><td>CMPE 148</td><td>Computer Networks I</td><td>3.0</td><td>In Progress</td></tr>
+            </tbody>
+        </table>
+    </section>
+    
+
+
+    <section class="links-section"></section>
+
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/harini-16-anand" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/merlinMorgan16" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
