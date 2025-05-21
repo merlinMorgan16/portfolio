@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 var acc = document.getElementsByClassName("accordion");
 var i;
 var panels = document.getElementsByClassName("panel");
-panels[1].style.display = "block"; 
+panels[0].style.display = "block"; 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
         var panels = document.getElementsByClassName("panel");
@@ -26,20 +26,20 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-function checkPassword() {
-    const correctPassword = 'frankbutt';
+// function checkPassword() {
+//     const correctPassword = 'frankbutt';
     
-    const enteredPassword = document.getElementById('passwordInput').value;
+//     const enteredPassword = document.getElementById('passwordInput').value;
     
-    const errorMessage = document.getElementById('errorMessage');
-    const transcriptSection = document.getElementById('transcriptSection');
+//     const errorMessage = document.getElementById('errorMessage');
+//     const transcriptSection = document.getElementById('transcriptSection');
     
-    if (enteredPassword === correctPassword) {
-        errorMessage.style.display = 'none';
+//     if (enteredPassword === correctPassword) {
+//         errorMessage.style.display = 'none';
         
-        transcriptSection.style.display = 'block';
-    } else {
-        errorMessage.style.display = 'block';
-        transcriptSection.style.display = 'none';
-    }
-}
+//         transcriptSection.style.display = 'block';
+//     } else {
+//         errorMessage.style.display = 'block';
+//         transcriptSection.style.display = 'none';
+//     }
+// }
